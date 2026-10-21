@@ -1,0 +1,9 @@
+.DS_Store
+Thumbs.db
+node_modules/
+.hyperframes/
+renders/
+frames/
+*.mp4
+!media/film.mp4
+!media/dusk-open-steppe-rider.mp4
