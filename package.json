@@ -1,0 +1,16 @@
+{
+  "name": "anime",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node harness/compile.test.mjs",
+    "frames": "node --expose-gc tools/render-frame.mjs films/dusk-open-steppe-rider frames 24",
+    "film": "npm run frames && node tools/encode-film.mjs",
+    "lint": "npx hyperframes@0.8.185 lint films/dusk-open-steppe-rider"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "node-html-parser": "^7.0.1",
+    "wawoff2": "^2.0.1"
+  }
+}
